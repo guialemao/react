@@ -1,0 +1,21 @@
+.button {
+  background-color: #313131;
+  border: 1px solid #313131;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .5s ease;
+
+  &:hover,
+  &:focus {
+    background-color: lighten(#313131, 10%);
+    border-color: lighten(#313131, 10%);
+  }
+}

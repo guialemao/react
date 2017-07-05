@@ -1,0 +1,27 @@
+@import '~normalize.css';
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import 'settings/mixins/*scss';
+
+body {
+  font-family: 'Roboto', sans-serif;
+  > * {
+    box-sizing: border-box;
+  }
+}
+
+// Exmplo de estrutura
+// header {
+//   @import 'components/*.scss';
+//   @import 'modules/header-structure/*scss';
+// }
+
+// .master {
+//   @import 'components/*.scss';
+//   @import 'modules/main-banner/*scss';
+//   @import 'modules/product-list/*scss';
+//   @import 'modules/second-banner/*scss';
+// }
+
+// footer {
+//   @import 'modules/copyright/*scss';
+// }
