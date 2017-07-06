@@ -1,6 +1,7 @@
 @import '~normalize.css';
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import 'settings/mixins/*scss';
+@import 'components/*.scss';
 
 body {
   font-family: 'Roboto', sans-serif;
