@@ -20,7 +20,9 @@ module.exports = {
     ],
   },
   devServer: {
-    contentBase: path.resolve(__dirname, './src'),  // New
+    contentBase: path.resolve(__dirname, './src'),
+    port: 3001,
+    historyApiFallback: true,
   },
   module: {
     rules: [

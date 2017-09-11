@@ -2,13 +2,22 @@ import '../sass/main.scss';
 
 import React from 'react';
 import { render } from 'react-dom';
+import { BrowserRouter, Match, Miss } from 'react-router';
 
-console.log(React);
+import App from './components/App';
+import SelectorStore from './components/SelectorStore';
+import NotFound from './components/NotFound';
 
-const p1 = (
-  <div>
-    <h1>Hello world</h1>
-  </div>
-);
+const Root = () => {
+  return (
+    <BrowserRouter>
+      <div>
+        <Match exactly pattern="/" component={SelectorStore} />
+        <Match pattern="/store/:storeId" component={App} />
+        <Miss component={NotFound} />
+      </div>  
+    </BrowserRouter>
+  )
+}
 
-console.log(p1);
+render(<Root/>, document.querySelector("#main"));

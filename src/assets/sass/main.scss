@@ -4,10 +4,29 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  > * {
-    box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.catch-of-the-day {
+  display: flex;
+  justify-content: flex-start;
+
+  .menu {
+    border: 1px solid #000;
+    height: 300px;
+    width: 33%;
+  }
+  
+  > p {
+    border: 1px solid #000;
+    height: 200px;
+    width: 33%;
   }
 }
+
 
 // Exmplo de estrutura
 // header {
